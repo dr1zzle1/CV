@@ -55,7 +55,7 @@ function sendMail(ev) {
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
   window.open(
-    `mailto:gploswal@gmail.com?subject=${subject}&body=${
+    `mailto:dr1zzlevmr@gmail.com?subject=${subject}&body=${
       "I am " + name + " " + phone + ". " + message
     }`
   );
