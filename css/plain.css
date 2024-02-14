@@ -317,6 +317,10 @@ footer {
     bottom: 0;
 }
 
+#contact .contact_logo {
+    display: none;
+}
+
 /*footer {*/
 /*    background-color: var(--theme-color);*/
 /*    margin: -5px 0px 0px 0px;*/
