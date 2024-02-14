@@ -204,6 +204,30 @@ i:hover {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    #skills img {
+        width: 100px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    #skills img {
+        width: 80px;
+        height: 48px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    #skills img {
+        width: 60px;
+        height: 36px;
+    }
+
+}
+
 .nav-link {
     color: var(--theme-black) !important;
     text-transform: uppercase;
