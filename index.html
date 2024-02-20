@@ -1,514 +1,310 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CV</title>
-    <link rel="stylesheet" href="./css/plain.css" />
-    <link rel="stylesheet" href="./css/intro.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  </head>
-  <body>
-    <div class="theme-mode" id="theme-mode" onclick="changeTheme()">
-      <i class="fas fa-sun" id="sun" title="Switch to dark mode"></i>
-      <i class="fas fa-moon" id="moon" title="Switch to light mode"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CV</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body>
+
+  <div class="theme-mode" id="theme-mode" onclick="changeTheme()">
+    <i class="fas fa-sun" id="sun" title="Switch to dark mode"></i>
+    <i class="fas fa-moon" id="moon" title="Switch to light mode"></i>
+  </div>
+
+  <section id="home" class="home">
+    <div class="container home_container" data-aos="fade-left" data-aos-duration="1000">
+      <h1>Valiev Marat</h1>
+      <p role="typewriter">
+        I'm <span id="typeabletext">Frontend developer</span>
+      </p>
+      <div>
+        <a href="https://github.com/dr1zzle1" target="_blank" title="Github">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a href="mailto:dr1zzlevmr@gmail.com" target="_blank" title="Mail">
+          <i class="fas fa-envelope-square"></i>
+        </a>
+      </div>
     </div>
-    <section id="home" class="bg d-flex flex-column justify-content-center">
-      <div
-        class="container name_container"
-        data-aos="fade-left"
-        data-aos-duration="1000"
-      >
-        <h1>Valiev Marat</h1>
-        <p role="typewriter">
-          I'm <span id="typeabletext">Frontend developer</span>
-        </p>
-        <div>
-          <a href="https://github.com/dr1zzle1" target="_blank" title="Github">
-            <i class="fab fa-github-square"></i>
-          </a>
-          <a href="mailto:dr1zzlevmr@gmail.com" target="_blank" title="Mail">
-            <i class="fas fa-envelope-square"></i>
-          </a>
+  </section>
+
+  <section id="about" class="sections about">
+    <div class="container">
+      <h2 class="about__title" data-aos-duration="1000" data-aos="fade-up">
+        Обо мне
+      </h2>
+      <p class="subtitle" data-aos-duration="1000" data-aos="fade-up">
+        Я технический энтузиаст с опытом разработки веб-сайтов и много чего
+        другого. Я люблю исследовать новые технологии. Мне нравится вникать в
+        требования проектов, и я эффективно дополняю их современными
+        технологиями.
+      </p>
+      <div class="about__content">
+        <div class="about__img">
+          <img data-aos-duration="1000" class="my_image" data-aos="fade-up" src="assets/my-photo.webp" alt=""
+            width="420px" height="420px" />
+        </div>
+
+        <div class="about__info">
+          <h4 class="color-theme" data-aos-duration="1000" data-aos="fade-up">
+            Web-разработчик, в частности Frontend части
+          </h4>
+          <p data-aos-duration="1000" data-aos="fade-up">
+            У меня был опыт разработки веб приложений. Я разработал более 20
+            приложений. Я работал с такими технологиями как: React, Redux,
+            Firebase, Node.js, MongoDB и другие. По моему мнению, не решайте
+            проблемы, исправляйте свое мышление, проблемы с мышлением будут
+            решены сами собой
+          </p>
+          <div class="social__links" data-aos-duration="1000" data-aos="fade-up">
+            <div>
+              <ul>
+                <li>
+                  <span class="text-bold"> Mobile: </span>
+                  <a href="tel:+79279289181">+79279289181</a>
+                </li>
+                <li>
+                  <span class="text-bold"> Email: </span>
+                  <a href="mailto:dr1zzlevmr@gmail.com">
+                    dr1zzlevmr@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <span class="text-bold"> Location: </span>
+                  Kazan, Russia
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li role="link">
+                  <span class="text-bold"> Github: </span>
+                  <a href="https://github.com/dr1zzle1">
+                    https://github.com/dr1zzle1
+                  </a>
+                </li>
+                <li>
+                  <span class="text-bold"> Open to work: </span>
+                  Available
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p data-aos-duration="1000" data-aos="fade-up">
+            Есть идея или хотите реализовать проект? Любая проблема или запрос
+            относительно любого проекта (по моему стеку)? Свяжитесь со мной в разделе
+            <a href="#contact">Контакты</a> ли отправьте мне
+            <a href="mailto:dr1zzlevmr@gmail.com">письмо</a>
+          </p>
         </div>
       </div>
-    </section>
-    <section id="about" class="sections">
-      <div class="container">
-        <h2 class="magnify_text" data-aos-duration="1000" data-aos="fade-up">
-          Обо мне
-        </h2>
-        <p class="info" data-aos-duration="1000" data-aos="fade-up">
-          Я технический энтузиаст с опытом разработки веб-сайтов и много чего
-          другого. Я люблю исследовать новые технологии. Мне нравится вникать в
-          требования проектов, и я эффективно дополняю их современными
-          технологиями.
-        </p>
-        <div class="row mt-5">
-          <div class="col-lg-4 col-12 d-flex justify-content-center">
+    </div>
+  </section>
+
+  <section id="skills" class="sections skills">
+    <div class="container">
+      <h2 data-aos-duration="1000" data-aos="fade-up">
+        Что я умею делать?
+      </h2>
+      <p class="subtitle" data-aos-duration="1000" data-aos="fade-up">
+        Единственный, с кем вы должны себя сравнивать, - это вы сами. Ваша
+        задача - стать сегодня лучше, чем вы были вчера. Для этого нужно
+        сосредоточиться на том, что вы можете сделать сегодня, чтобы
+        совершенствоваться и расти.
+      </p>
+      <div class="skills__content">
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <img src="./assets/skills/react.png" alt="" width="150" height="90" />
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <img src="./assets/skills/python.png" alt="" width="150" height="90" />
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <img src="./assets/skills/node.png" alt="" width="150" height="90" />
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <img src="./assets/skills/PS.png" alt="" width="150" height="90" />
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <img src="./assets/skills/git.png" alt="" width="150" height="90" />
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <img src="./assets/skills/mongodb.png" alt="" width="150" height="90" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="sections projects">
+    <div class="container">
+      <h2 data-aos-duration="1000" data-aos="fade-up">
+        Мои пет-проекты
+      </h2>
+      <p class="subtitle" data-aos-duration="1000" data-aos="fade-up">
+        Воспитание хорошей трудовой этики - ключевой момент. Прикладывайте
+        усилия ко всему, что вы делаете, будь то уборка или первая летняя
+        работа, потому что эта трудовая этика будет отражаться на всем, что вы
+        делаете в жизни.
+      </p>
+      <div class="projects__list">
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <a href="https://github.com/dr1zzle1/cloudify-v2.0" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=cloudify-v2.0&theme=react"
+              alt="" />
+          </a>
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <a href="https://github.com/dr1zzle1/cloudify_back-end" target="_blank">
             <img
-              data-aos-duration="1000"
-              class="my_image"
-              data-aos="fade-up"
-              src="assets/my-photo.webp"
-              alt=""
-              width="420px"
-              height="420px"
-            />
-          </div>
+              src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=cloudify_back-end&theme=react"
+              alt="" />
+          </a>
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <a href="https://github.com/dr1zzle1/game-store" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=game-store&theme=react"
+              alt="" />
+          </a>
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <a href="https://github.com/dr1zzle1/react-pizza-v2" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=react-pizza-v2&theme=react"
+              alt="" />
+          </a>
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <a href="https://github.com/dr1zzle1/autoexpress" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=autoexpress&theme=react"
+              alt="" />
+          </a>
+        </div>
+        <div data-aos-duration="1000" data-aos="fade-up">
+          <a href="https://github.com/dr1zzle1/blog-project" target="_blank">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=blog-project&theme=react"
+              alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-lg-8 col-12 mt-md-0 mt-5">
-            <h4
-              class="text-bold color-theme"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              Web-разработчик, в частности Frontend части
-            </h4>
-            <p data-aos-duration="1000" data-aos="fade-up">
-              У меня был опыт разработки веб приложений. Я разработал более 20
-              приложений. Я работал с такими технологиями как: React, Redux,
-              Firebase, Node.js, MongoDB и другие. По моему мнению, не решайте
-              проблемы, исправляйте свое мышление, проблемы с мышлением будут
-              решены сами собой
-            </p>
-            <div class="row" data-aos-duration="1000" data-aos="fade-up">
-              <div class="col-12 col-md-6">
-                <ul>
-                  <li class="mt-3">
-                    <span class="text-bold"> Mobile: </span>
-                    <a href="tel:+79279289181">+79279289181</a>
-                  </li>
-                  <li class="mt-3">
-                    <span class="text-bold"> Email: </span>
-                    <a href="mailto:dr1zzlevmr@gmail.com">
-                      dr1zzlevmr@gmail.com
-                    </a>
-                  </li>
-                  <li class="mt-3">
-                    <span class="text-bold"> Location: </span>
-                    Kazan, Russia
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-6">
-                <ul>
-                  <li class="mt-3" role="link">
-                    <span class="text-bold"> Github: </span>
-                    <a href="https://github.com/dr1zzle1">
-                      https://github.com/dr1zzle1
-                    </a>
-                  </li>
-                  <li class="mt-3">
-                    <span class="text-bold"> Open to work: </span>
-                    Available
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p data-aos-duration="1000" data-aos="fade-up">
-              Есть идея или хотите реализовать проект? Любая проблема или запрос
-              относительно любого проекта (по моему стеку)? Свяжитесь со мной в разделе
-              <a href="#contact">Контакты</a> ли отправьте мне
-              <a href="mailto:dr1zzlevmr@gmail.com">письмо</a>
-            </p>
+  <section id="resume" class="sections resume">
+    <div class="container">
+      <h2 data-aos-duration="1000" data-aos="fade-up">
+        Резюме
+      </h2>
+      <p class="subtitle" data-aos-duration="1000" data-aos="fade-up">
+        Один из лучших советов, которые я когда-либо получал, был от мастера
+        лошадей. Он сказал мне, что нужно идти медленно, чтобы идти быстро. Я
+        думаю, это относится ко всему в жизни. Нам кажется, что в сутках мало
+        часов, но если мы будем делать каждое дело спокойно и внимательно, то
+        добьемся своего быстрее и с гораздо меньшим стрессом.
+      </p>
+      <div class="resume__content">
+        <div class="resume__study">
+          <h4 class="text-bold resume__subtitle" data-aos-duration="1000" data-aos="fade-up">
+            Обучение
+          </h4>
+          <div class="timeline" data-aos-duration="1000" data-aos="fade-up">
+            <h4>КГЭУ</h4>
+            <p>2022 - 2026</p>
+            <h5>Прикладная математика</h5>
+          </div>
+        </div>
+        <div class="resume__work">
+          <h4 class="text-bold resume__subtitle" data-aos-duration="1000" data-aos="fade-up">
+            Опыт работы
+          </h4>
+          <div class="timeline" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Веб-разработчик</h4>
+            <p>06/2022 - Present</p>
+            <h5>Freelance</h5>
+            <ul>
+              <li>Разрабатываю не сложные веб проекты заказчикам</li>
+            </ul>
+          </div>
+          <div class="timeline" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Верстальщик</h4>
+            <p>2020 - 2022</p>
+            <h5>Freelance</h5>
+            <ul>
+              <li>Верстал заказчикам макеты будучи школьником</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="sections">
-      <div class="container">
-        <h2 class="magnify_text" data-aos-duration="1000" data-aos="fade-up">
-          Что я умею делать?
-        </h2>
-        <p class="info" data-aos-duration="1000" data-aos="fade-up">
-          Единственный, с кем вы должны себя сравнивать, - это вы сами. Ваша
-          задача - стать сегодня лучше, чем вы были вчера. Для этого нужно
-          сосредоточиться на том, что вы можете сделать сегодня, чтобы
-          совершенствоваться и расти.
-        </p>
-        <div class="d-flex justify-content-center">
-          <div class="row width-75">
-            <div
-              class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <img
-                src="./assets/skills/react.png"
-                alt=""
-                width="150"
-                height="90"
-              />
-            </div>
-            <div
-              class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <img
-                src="./assets/skills/python.png"
-                alt=""
-                width="150"
-                height="90"
-              />
-            </div>
-            <div
-              class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <img
-                src="./assets/skills/node.png"
-                alt=""
-                width="150"
-                height="90"
-              />
-            </div>
-            <div
-              class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <img
-                src="./assets/skills/PS.png"
-                alt=""
-                width="150"
-                height="90"
-              />
-            </div>
-
-            <div
-              class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <img
-                src="./assets/skills/git.png"
-                alt=""
-                width="150"
-                height="90"
-              />
-            </div>
-            <div
-              class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <img
-                src="./assets/skills/mongodb.png"
-                alt=""
-                width="150"
-                height="90"
-              />
-            </div>
-            <!-- <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2">
-                    <img src="./img/skills/python.png" alt="" width="150" height="90">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2">
-                    <img src="./img/skills/flask.png" alt="" width="150" height="90">
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-item-center mt-2 mb-2">
-                    <img src="./img/skills/django.png" alt="" width="150" height="90">
-                </div> -->
+  <section id="contact" class="sections contact">
+    <div class="container">
+      <h2 data-aos-duration="1000" data-aos="fade-up">
+        Контакты
+      </h2>
+      <div class="contact__content" data-aos-duration="1000" data-aos="fade-up">
+        <div>
+          <div>
+            <h4>Email:</h4>
+            <p>dr1zzlevmr@gmail.com</p>
+          </div>
+          <div>
+            <h4>Mobile:</h4>
+            <p>+79279289181</p>
+          </div>
+          <div>
+            <h4>Location:</h4>
+            <p>Kazan, Russia</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="projects" class="sections">
-      <div class="container">
-        <h2 class="magnify_text" data-aos-duration="1000" data-aos="fade-up">
-          Мои пет-проекты
-        </h2>
-        <p class="info" data-aos-duration="1000" data-aos="fade-up">
-          Воспитание хорошей трудовой этики - ключевой момент. Прикладывайте
-          усилия ко всему, что вы делаете, будь то уборка или первая летняя
-          работа, потому что эта трудовая этика будет отражаться на всем, что вы
-          делаете в жизни.
-        </p>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="row mt-3 width-75">
-          <div
-            class="col-12 col-md-6 col-lg-4 text-center mt-2"
-            data-aos-duration="1000"
-            data-aos="fade-up"
-          >
-            <a href="https://github.com/dr1zzle1/cloudify-v2.0" target="_blank">
-              <img
-                src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=cloudify-v2.0&theme=react"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-4 text-center mt-2"
-            data-aos-duration="1000"
-            data-aos="fade-up"
-          >
-            <a
-              href="https://github.com/dr1zzle1/cloudify_back-end"
-              target="_blank"
-            >
-              <img
-                src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=cloudify_back-end&theme=react"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-4 text-center mt-2"
-            data-aos-duration="1000"
-            data-aos="fade-up"
-          >
-            <a href="https://github.com/dr1zzle1/game-store" target="_blank">
-              <img
-                src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=game-store&theme=react"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-4 text-center mt-2"
-            data-aos-duration="1000"
-            data-aos="fade-up"
-          >
-            <a
-              href="https://github.com/dr1zzle1/react-pizza-v2"
-              target="_blank"
-            >
-              <img
-                src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=react-pizza-v2&theme=react"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-4 text-center mt-2"
-            data-aos-duration="1000"
-            data-aos="fade-up"
-          >
-            <a href="https://github.com/dr1zzle1/autoexpress" target="_blank">
-              <img
-                src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=autoexpress&theme=react"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-4 text-center mt-2"
-            data-aos-duration="1000"
-            data-aos="fade-up"
-          >
-            <a href="https://github.com/dr1zzle1/blog-project" target="_blank">
-              <img
-                src="https://github-readme-stats.vercel.app/api/pin/?username=dr1zzle1&repo=blog-project&theme=react"
-                alt=""
-              />
-            </a>
-          </div>
+        <div class="contact__form">
+          <form data-aos-duration="1000" data-aos="fade-up" onsubmit="sendMail(event)">
+            <div class="form__header">
+              <input type="text" placeholder="Name" required id="name" />
+              <input type="text" pattern="[7][0-9]{10}" placeholder="Phone" required id="phone" />
+            </div>
+            <input type="text" class="form__subject" placeholder="Subject" required id="subject" />
+            <textarea name="" cols="30" rows="5" placeholder="Message..." class="form__message" required
+              id="message"></textarea>
+            <button type="submit" class="submit">Submit</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="resume" class="sections">
-      <div class="container">
-        <h2 class="magnify_text" data-aos-duration="1000" data-aos="fade-up">
-          Резюме
-        </h2>
-        <p class="info" data-aos-duration="1000" data-aos="fade-up">
-          Один из лучших советов, которые я когда-либо получал, был от мастера
-          лошадей. Он сказал мне, что нужно идти медленно, чтобы идти быстро. Я
-          думаю, это относится ко всему в жизни. Нам кажется, что в сутках мало
-          часов, но если мы будем делать каждое дело спокойно и внимательно, то
-          добьемся своего быстрее и с гораздо меньшим стрессом.
-        </p>
-        <div class="row">
-          <div class="col-12 col-md-6 mt-3 p-3">
-            <h4 class="text-bold" data-aos-duration="1000" data-aos="fade-up">
-              Обучение
-            </h4>
-
-            <div class="timeline" data-aos-duration="1000" data-aos="fade-up">
-              <h4>КГЭУ</h4>
-              <p>2022 - 2026</p>
-              <h5>Прикладная математика</h5>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 mt-3 p-3">
-            <h4 class="text-bold" data-aos-duration="1000" data-aos="fade-up">
-              Опыт работы
-            </h4>
-            <div
-              class="timeline mt-4"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-            >
-              <h4>Веб-разработчик</h4>
-              <p>06/2022 - Present</p>
-              <h5>Freelance</h5>
-              <ul>
-                <li>Разрабатываю не сложные веб проекты заказчикам</li>
-              </ul>
-            </div>
-            <div class="timeline" data-aos-duration="1000" data-aos="fade-up">
-              <h4>Верстальщик</h4>
-              <p>2020 - 2022</p>
-              <h5>Freelance</h5>
-              <ul>
-                <li>Верстал заказчикам макеты будучи школьником</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="sections">
-      <div class="container">
-        <h2 class="magnify_text" data-aos-duration="1000" data-aos="fade-up">
-          Контакты
-        </h2>
-        <div class="row mt-3" data-aos-duration="1000" data-aos="fade-up">
-          <div class="col-12 col-md-4">
-            <div class="d-flex align-item-center">
-              <div class="contact_logo">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="d-flex justify-content-center flex-column">
-                <h4 class="mb-0">Email:</h4>
-                <p class="mb-0">dr1zzlevmr@gmail.com</p>
-              </div>
-            </div>
-            <div class="d-flex align-item-center">
-              <div class="contact_logo">
-                <i class="fas fa-mobile"></i>
-              </div>
-              <div class="d-flex justify-content-center flex-column">
-                <h4 class="mb-0">Mobile:</h4>
-                <p class="mb-0">+79279289181</p>
-              </div>
-            </div>
-            <div class="d-flex align-item-center">
-              <div class="contact_logo">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="d-flex justify-content-center flex-column">
-                <h4 class="mb-0">Location:</h4>
-                <p class="mb-0">Kazan, Russia</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-8">
-            <form
-              class="p-2"
-              data-aos-duration="1000"
-              data-aos="fade-up"
-              onsubmit="sendMail(event)"
-            >
-              <div class="row">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Name"
-                    required
-                    id="name"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    pattern="[7][0-9]{10}"
-                    class="form-control"
-                    placeholder="Phone"
-                    required
-                    id="phone"
-                  />
-                </div>
-              </div>
-              <input
-                type="text"
-                class="form-control mt-2"
-                placeholder="Subject"
-                required
-                id="subject"
-              />
-              <textarea
-                name=""
-                cols="30"
-                rows="5"
-                placeholder="Message..."
-                class="form-control mt-2"
-                required
-                id="message"
-              ></textarea>
-              <div class="d-flex justify-content-center p-3">
-                <button type="submit" class="submit">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <svg viewBox="0 0 120 28">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="
+  <footer>
+    <svg viewBox="0 0 120 28">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="
            1 0 0 0 0
            0 1 0 0 0
            0 0 1 0 0
-           0 0 0 13 -9"
-              result="goo"
-            />
-            <xfeBlend in="SourceGraphic" in2="goo" />
-          </filter>
-          <path
-            id="wave"
-            d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"
-          />
-        </defs
+           0 0 0 13 -9" result="goo" />
+          <xfeBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <path id="wave"
+          d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+      </defs <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2">
+      </use>
+      <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+    </svg>
+  </footer>
 
-        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
-        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
-      </svg>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
