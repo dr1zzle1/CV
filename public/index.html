@@ -63,8 +63,8 @@
           <p data-aos-duration="1000" data-aos="fade-up">
             У меня был опыт разработки веб приложений. Я разработал более 20
             приложений. Я работал с такими технологиями как: React, Redux,
-            Firebase, Node.js, MongoDB и другие. По моему мнению, не решайте
-            проблемы, исправляйте свое мышление, проблемы с мышлением будут
+            Firebase, Node.js, MongoDB и другие. По моему мнению, не надо решать
+            проблемы, нужно исправляйте свое мышление, проблемы с мышлением будут
             решены сами собой
           </p>
           <div class="social__links" data-aos-duration="1000" data-aos="fade-up">
@@ -253,7 +253,7 @@
         Контакты
       </h2>
       <div class="contact__content" data-aos-duration="1000" data-aos="fade-up">
-        <div>
+        <div class="contact__info">
           <div>
             <h4>Email:</h4>
             <p>dr1zzlevmr@gmail.com</p>
@@ -268,7 +268,7 @@
           </div>
         </div>
         <div class="contact__form">
-          <form data-aos-duration="1000" data-aos="fade-up" onsubmit="sendMail(event)">
+          <form id="form" data-aos-duration="1000" data-aos="fade-up" onsubmit="submitForm(event)">
             <div class="form__header">
               <input type="text" placeholder="Name" required id="name" />
               <input type="text" pattern="[7][0-9]{10}" placeholder="Phone" required id="phone" />
@@ -276,7 +276,7 @@
             <input type="text" class="form__subject" placeholder="Subject" required id="subject" />
             <textarea name="" cols="30" rows="5" placeholder="Message..." class="form__message" required
               id="message"></textarea>
-            <button type="submit" class="submit">Submit</button>
+            <button id="form-btn" type="submit" class="submit">Submit</button>
           </form>
         </div>
       </div>

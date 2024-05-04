@@ -36,19 +36,6 @@ setTimeout(() => {
   }
 }, 5000);
 
-function sendMail(ev) {
-  ev.preventDefault();
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
-  window.open(
-    `mailto:dr1zzlevmr@gmail.com?subject=${subject}&body=${
-      "I am " + name + " " + phone + ". " + message
-    }`
-  );
-}
-
 const theme_mode = document.getElementById("theme-mode");
 const moon = document.getElementById("moon");
 const sun = document.getElementById("sun");
@@ -68,3 +55,38 @@ function changeTheme() {
     element.classList.toggle("dark-mode");
   }
 }
+
+// Обработка формы
+
+const submitForm = async (event) => {
+  event.preventDefault();
+
+  var formBtn = document.getElementById("form-btn");
+
+  formBtn.classList.add("disabled");
+  formBtn.disabled = true;
+
+  var form = document.getElementById("form");
+  // Собираем данные формы
+  var formData = new FormData();
+  formData.append("name", document.getElementById("name").value);
+  formData.append("phone", document.getElementById("phone").value);
+  formData.append("subject", document.getElementById("subject").value);
+  formData.append("message", document.getElementById("message").value);
+  // Запрос
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "submit-form");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        console.log("Данные успешно отправлены на сервер");
+        form.reset();
+        formBtn.classList.remove("disabled");
+        formBtn.disabled = false;
+      } else {
+        console.error("Ошибка при отправке данных на сервер");
+      }
+    }
+  };
+  xhr.send(formData);
+};

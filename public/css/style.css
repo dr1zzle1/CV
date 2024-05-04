@@ -143,7 +143,7 @@ section h2:before {
     width: 120px;
     height: 1px;
     background: #ddd;
-    top: 75px;
+    bottom: -5px;
     left: calc(50% - 60px);
 }
 
@@ -154,7 +154,7 @@ section h2:after {
     width: 40px;
     height: 3px;
     background: var(--theme-color);
-    top: 74px;
+    bottom: -6px;
     left: calc(50% - 20px);
 }
 
@@ -307,6 +307,11 @@ i:hover {
     width: 33.33%;
 }
 
+.about__img img {
+    object-fit: contain;
+    height: auto;
+}
+
 .about__info {
     width: 66.66%;
 }
@@ -329,6 +334,27 @@ i:hover {
     text-decoration: underline;
 }
 
+
+@media (max-width: 600px) {
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__img {
+        width: 50%;
+    }
+
+    .about__info {
+        width: 100%;
+    }
+
+    .social__links {
+        flex-direction: column;
+    }
+}
+
+
 /* SKILLS */
 
 .skills__content {
@@ -340,6 +366,8 @@ i:hover {
 .skills__content img {
     box-shadow: 2px 0 16px var(--theme-color);
     transition: transform 500ms;
+    object-fit: contain;
+    height: auto;
 }
 
 .skills__content img:hover {
@@ -361,6 +389,13 @@ i:hover {
     width: calc((100% / 3) - (2rem / 3))
 }
 
+@media (max-width: 600px) {
+    .projects__list div {
+        width: 45%;
+    }
+}
+
+
 /* RESUME */
 .resume__content {
     display: flex;
@@ -371,6 +406,14 @@ i:hover {
 .resume__subtitle {
     padding-bottom: 15px;
 }
+
+@media (max-width: 600px) {
+    .resume__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
 
 .timeline {
     border-left: 2px solid var(--theme-color);
@@ -414,6 +457,20 @@ i:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .contact__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact__info div {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
 
@@ -473,10 +530,17 @@ i:hover {
     border-radius: 40px;
     border: none;
     box-shadow: 0 0 10px var(--theme-color);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.submit.disabled {
+    background: #6f6b8b;
 }
 
 .submit:hover {
     box-shadow: 0 0 50px var(--theme-color);
+    transition: all .2s ease;
 }
 
 /* FOOTER */
