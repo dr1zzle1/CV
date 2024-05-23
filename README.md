@@ -1,6 +1,9 @@
 <h2 align="center">Curriculum vitae(CV)</h2>
+
 ## Quick start:
+
 #### 1) Clone repository:
+
 ```
 git clone https://github.com/dr1zzle1/CV.git
 ```
